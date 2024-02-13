@@ -6,13 +6,13 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-        name: 'mainImage',
-        title: 'Main Image',
-        type: 'image',
-        options: {
-          hotspot: true,
-        },
-      }),
+      name: 'mainImage',
+      title: 'Main Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
     defineField({
       name: 'title',
       title: 'Name',
@@ -25,9 +25,13 @@ export default defineType({
     }),
     defineField({
       name: 'description',
-      title: 'About',
-      type: 'string',
+      title: 'About the Director',
+      type: 'blockContent',
     }),
-   
+    defineField({
+      name: 'directorate_description',
+      title: 'The Directorate',
+      type: 'blockContent',
+    }),
   ],
 })

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Service() {
   return (
-    <section className="service_section layout_padding">
+    <section className="service_section layout_padding" id="Services">
       <div className="service_container">
         <div className="container">
           <div className="heading_container heading_center">

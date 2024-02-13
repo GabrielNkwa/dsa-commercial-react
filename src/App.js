@@ -1,44 +1,26 @@
 import logo from './logo.svg';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import * as React from 'react';
+import * as ReactDom from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css';
-import Header from './Layout/Header';
-import Service from './Layout/Service';
-import Why from './Layout/Why';
-import Leadership from './Layout/Leadership';
-import Slider from './Layout/Slider';
-import About from './Layout/About';
-import Info from './Layout/Info';
-import Footer from './Layout/Footer';
+
+import ErrorPage from './components/Error';
+import Homepage from './components/Homepage';
+import NewsPage from './components/NewsPage';
+import SinglePost from './components/SinglePost';
 
 export function App() {
   return (
-    <div>
-      <div className="hero_area">
-        <div className="hero_bg_box">
-          <div className="bg_img_box">
-            <img src="images/hero-bg.png" alt="" />
-          </div>
-        </div>
-
-        <Header />
-
-        <Slider />
-      </div>
-
-      <Service />
-
-      <About />
-
-      <Why />
-
-      <Leadership />
-
-      <Info />
-
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<Homepage />} />
+        <Route path="/error" element={<ErrorPage />} />
+        <Route path="/news/:slug" element={<SinglePost />} />
+        <Route path="/news" element={<NewsPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 export default App;

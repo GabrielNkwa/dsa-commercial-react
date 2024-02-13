@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export default function News() {
   return (
-    <div>News</div>
-  )
+    <section className="why_section layout_padding" id="News">
+      <div className="container"> News</div>
+    </section>
+  );
 }

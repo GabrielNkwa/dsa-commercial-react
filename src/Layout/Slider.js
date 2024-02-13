@@ -1,105 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 export default function Slider() {
   return (
-    <section className="slider_section">
-    <div id="customCarousel1" className="carousel slide" data-ride="carousel">
-      <div className="carousel-inner">
-        <div className="carousel-item active">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="detail-box">
-                  <h1>
-                    DEFENCE SPACE <br />
-                    ADMINISTRATION
-                  </h1>
-                  <p>The Ultimate High Ground.</p>
-                  <div className="btn-box">
-                    <a href="" className="btn1">
-                      {' '}
-                      Our Services{' '}
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="img-box">
-                  <img src="images/sat1.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <!-- <div className="carousel-item">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <div className="detail-box">
-                <h1>
-                  DEFENCE SPACE <br />
-                  ADMINISTRATION
-                </h1>
-                <p>
-                  Explicabo esse amet tempora quibusdam laudantium,
-                  laborum eaque magnam fugiat hic? Esse dicta aliquid
-                  error repudiandae earum suscipit fugiat molestias,
-                  veniam, vel architecto veritatis delectus repellat modi
-                  impedit sequi.
-                </p>
-                <div className="btn-box">
-                  <a href="" className="btn1"> Read More </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="img-box">
-                <img src="images/slider-img.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="carousel-item">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <div className="detail-box">
-                <h1>
-                  DEFENCE SPACE <br />
-                  ADMINISTRATION
-                </h1>
-                <p>
-                  Explicabo esse amet tempora quibusdam laudantium,
-                  laborum eaque magnam fugiat hic? Esse dicta aliquid
-                  error repudiandae earum suscipit fugiat molestias,
-                  veniam, vel architecto veritatis delectus repellat modi
-                  impedit sequi.
-                </p>
-                <div className="btn-box">
-                  <a href="" className="btn1"> Read More </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="img-box">
-                <img src="images/slider-img.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> --> */}
-      </div>
-      {/* <!-- <ol className="carousel-indicators">
-        <li
-          data-target="#customCarousel1"
-          data-slide-to="0"
-          className="active"
-        ></li>
-        <li data-target="#customCarousel1" data-slide-to="1"></li>
-        <li data-target="#customCarousel1" data-slide-to="2"></li>
-      </ol> --> */}
-    </div>
-  </section>
-  )
+    <section className="flex flex-col items-center justify-center text-center h-screen">
+      <h1 className="uppercase font-bold text-4xl tracking-wide mb-5 md:text-4xl lg:text-6xl text-white">
+        Defence Space Administration
+      </h1>
+      <p className="uppercase font-bold text-white">The Ultimate High Ground</p>
+    </section>
+  );
 }
